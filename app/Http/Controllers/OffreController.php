@@ -15,7 +15,7 @@ class OffreController extends Controller
 public function __construct(){
     
   
-    $this->middleware('admin')->except('index','search','useroffre');
+    $this->middleware('admin')->except('index','search','useroffre','filtre');
    
 
 }

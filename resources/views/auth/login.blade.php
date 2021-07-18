@@ -29,7 +29,7 @@
                                 @enderror
                         <div class="tp">
 
-                            <div class="form-group row">
+                            {{-- <div class="form-group row">
                                 <div class="col-md-6 offset-md-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -39,7 +39,7 @@
                                         </label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <input type="submit" value="Valider">
                         </div>
                     </form>
@@ -57,6 +57,7 @@
                         {{ __('Mot de passe oublié ?') }}
                     </a>
                 @endif</p> --}}
+            <br>
                 <p><a href="{{ route('register') }}"> Creer un compte içi</a></p>
             </div>
         </div>

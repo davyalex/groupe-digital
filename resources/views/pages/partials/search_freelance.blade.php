@@ -15,14 +15,9 @@
                     </div>
                 </div>
             </form>
-            @if (count($freelance)>0)
-          
+            @if (request()->input('q'))
             <h4 class=" text-center text-success"><b>{{ $freelance->count() }}</b> Freelance(s) Disponible(s)</h4>
-
-           
-            @else
-            <h3 class="text-center text-danger">Pas de freelance disponible pour votre recherche....recherchez autres freelances</h3>
-            @endif
+         @endif
         </div>
     </div>
 </div>

@@ -130,7 +130,7 @@
             <a class="" href="#modalRes" data-toggle="modal"><i class="fa fa-wifi" aria-hidden="true"></i></a>
             <div class="events_info">
                 {{-- <h5>Oct 12,2017</h5> --}}
-                <h4> <a class="" href="#modalRes" data-toggle="modal">Depannage & Mise en place Reseau informatique</a></h4>
+                <h4> <a class="" href="#modalRes" data-toggle="modal">Reseau informatique</a></h4>
                 {{-- <p>Lorem ipsum dolor sit amet,vehicula vel sapien et, feugiat sapien amet.</p> --}}
                 {{-- <a class="btn btn-primary btn-lg" href="#modalRes" data-toggle="modal">Savoir plus »</a> --}}
             </div>

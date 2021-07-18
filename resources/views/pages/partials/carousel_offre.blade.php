@@ -27,7 +27,9 @@
             <div class="owl-carousel owl-theme">
                 @foreach ($category as $categories)
                 <div class="item" style="">
-                    <a href="/offre.index?category={{ $categories->id}}">{{ $categories->libelle}}</a><span>({{ $categories->offres->count() }})</span>             
+                        @if ($categories->offres->count()>0)
+                        <a href="/offre.index?category={{ $categories->id}}">{{ $categories->libelle}}</a><span>({{ $categories->offres->count() }})</span>             
+                        @endif
                    </div>
                 
                     @endforeach

@@ -13,7 +13,7 @@
             </button>
                     <style>
                         .logo{
-                            width: 200px;
+                            width: 180px;
                         }
                     </style>
                     <a class="navbar-brand" href="/">
@@ -59,9 +59,9 @@
                                     @empty
                                     PAS DE CATEGORY
                                     @endforelse --}}
-                                    <li><a href="{{ route('offre.index') }}" class="btn btn-success"> <i class="fa fa-list" aria-hidden="true"></i> Voir les offres</a></li>
+                                    <li><a href="{{ route('offre.index') }}" class=""> <i class="fa fa-list" aria-hidden="true"></i> <b>Voir les offres</b></a></li>
                                     <li class="divider"></li>
-                                    <li ><a href="{{ route('offre.useroffre_create') }}" data-toggle="modal" class="btn btn-warning" style="font-weigth:bold;"><i class="fa fa-plus" aria-hidden="true"></i> Publier une offre</a></li>
+                                    <li ><a href="{{ route('offre.useroffre_create') }}" data-toggle="modal" class="" style="font-weigth:bold;"><i class="fa fa-plus" aria-hidden="true"></i><b> Publier une offre</b></a></li>
 
                                 </ul>
                             </li>
@@ -69,11 +69,11 @@
                             <li class="dropdown">
                                 <a href="services.html" class="dropdown-toggle effect-3" data-toggle="dropdown">Freelances <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{{ route('freelance.index') }}"class="btn btn-success"><i class="fa fa-search" aria-hidden="true"></i> <b>Rechercher un service</b></a></li>
+                                    <li><a href="{{ route('freelance.index') }}"class=""><i class="fa fa-search" aria-hidden="true"></i> <b>Rechercher un service</b></a></li>
                                     <li class="divider"></li>
-                                    <li><a href="{{ route('freelance.create') }}" class="btn btn-warning"><i class="fa fa-save    "></i> <b>Poster un service</b></a></li>
+                                    <li><a href="{{ route('freelance.create') }}" class=""><i class="fa fa-plus    "></i> <b>Poster un service</b></a></li>
                                     <li class="divider"></li>
-                                    <li><a href="{{ route('freelance.mesannonces') }}" class="btn btn-primary"><i class="fa fa-list    "></i> <b>Mes annonces</b></a></li>
+                                    <li><a href="{{ route('freelance.mesannonces') }}" class=""><i class="fa fa-list    "></i> <b>Mes annonces</b></a></li>
 
                                     {{-- <li class="divider"></li>
                                     <li><a href="codes.html">Multimedia</a></li>
@@ -89,35 +89,44 @@
                                 <a href="pages.formation" class="dropdown-toggle effect-3" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     @if (Route::has('login'))
-                                    <li><a href="{{ route('login') }}">Connectez-vous</a></li>
+                                    <li><a href="{{ route('login') }}"><b>Connectez-vous</b></a></li>
+                                        <div class="divider"></div>
                                     @endif
                                     @if (Route::has('register'))
-                                    <li><a href="{{ route('register') }}">Creer un compte</a></li>
+                                    <li><a href="{{ route('register') }}"><b>Creer un compte</b></a></li>
                                     @endif
 
-                                      @else
-
-                                      <li class="nav-item dropdown">
+                                    @endguest
+                                   
+                                     @auth
+                                    
+                                     <li class="nav-item dropdown">
                                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                            <i class="fa fa-user" aria-hidden="true"></i> <span class="text-success">{{ Auth::user()->name }}</span>
                                         </a>
-        
+                                        {{-- @if (Auth::user()->is_admin==1 OR Auth::user()->email=="groupe-digital@gmail.com" )
+                                        <li><a href="{{ route('register') }}"><b>Dashboard</b></a></li>
+                                        @endif --}}
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                          
                                             <a class="dropdown-item" href="{{ route('logout') }}"
                                                onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">
                                                 <i class="fa fa-sign-out"></i> <strong class="text-center">{{ __('Deconnexion') }}</strong>
                                             </a>
-        
+                                           
                                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                                 @csrf
                                             </form>
+                                           
                                         </div>
                                     </li>
+                                     @endauth
+                                    
                                    
                                 </ul>
                             </li> 
-                            @endguest
+                         
                             {{-- <li><a href="contact.html" class="effect-3">nous joindre</a></li> --}}
                         </ul>
                     </nav>
