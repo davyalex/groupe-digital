@@ -49,6 +49,24 @@
 
                             {{-- <li><a href="/offre.index" class="effect-3">Offres</a></li> --}}
 
+                          
+
+                            <li class="dropdown">
+                                <a href="services.html" class="dropdown-toggle effect-3" data-toggle="dropdown">Devenir Freelance <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{ route('freelance.index') }}"class=""><i class="fa fa-search" aria-hidden="true"></i> <b>Rechercher un service</b></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="{{ route('freelance.create') }}" class=""><i class="fa fa-plus    "></i> <b>Publier un service</b></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="{{ route('freelance.mesannonces') }}" class=""><i class="fa fa-list    "></i> <b>Mes annonces</b></a></li>
+
+                                    {{-- <li class="divider"></li>
+                                    <li><a href="codes.html">Multimedia</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="icons.html">Formations</a></li>
+                                    <li class="divider"></li> --}}
+                                </ul>
+                            </li>
                             <li class="dropdown">
                                 <a href="" class="dropdown-toggle effect-3" data-toggle="dropdown">Offres <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -65,24 +83,7 @@
 
                                 </ul>
                             </li>
-
-                            <li class="dropdown">
-                                <a href="services.html" class="dropdown-toggle effect-3" data-toggle="dropdown">Freelances <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="{{ route('freelance.index') }}"class=""><i class="fa fa-search" aria-hidden="true"></i> <b>Rechercher un service</b></a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="{{ route('freelance.create') }}" class=""><i class="fa fa-plus    "></i> <b>Poster un service</b></a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="{{ route('freelance.mesannonces') }}" class=""><i class="fa fa-list    "></i> <b>Mes annonces</b></a></li>
-
-                                    {{-- <li class="divider"></li>
-                                    <li><a href="codes.html">Multimedia</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="icons.html">Formations</a></li>
-                                    <li class="divider"></li> --}}
-                                </ul>
-                            </li>
-                             <li><a href="/formation" class="effect-3">Formations</a></li>
+                             <li><a href="#" class="effect-3">Nos réalisations</a></li>
 
                             @guest
                             <li class="dropdown">
