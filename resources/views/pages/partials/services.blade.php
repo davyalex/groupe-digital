@@ -17,12 +17,14 @@
 } */
 
 .ban_o h2{
-   color: black
+   color: white;
+   text-transform: capitalize;
+   font-size: 40px
 }
 .ban_o {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
     padding: 70px 50px 40px 50px;
-    background-color: #ffffff;border-bottom: solid #000999
+    background-color: #2196f3;border-bottom: solid #2196f3
 }
 
 }
@@ -46,11 +48,13 @@
     border-color: #26547c;
     color: #ffffff;
     }
-    .btn-success{
-        background-color: #ff9900;
-    border-color: #ff9900;
-    color: #ffffff;
-    margin: 10px
+    .btn-info{
+        background-color: white;
+    border-color: #ffffff;
+    color: #2158f3;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 30px
     }
     .fa-html5,.fa-desktop{
         width: 100px;
@@ -91,10 +95,23 @@
     }
     
 </style>
-
+<div class="container-fluid" >
+    <div class="row">
+    {{-- <h2 class="h_o">Offres Emploi - Stage - Freelance sont disponibles</h2> --}}
+        <div class="col-md-12">
+       <p class="text-center" style="font-size:17px;">
+        Bienvenue chez <strong>GROUPE DIGITAL</strong> !, notre <strong>agence digital</strong> a pour objectif d’aider les entreprises à développer leurs activités grâce à internet. C’est pour cela que nous proposons des services <strong> de création de site internet, de gestion des comptes sur les réseaux sociaux, d’infographie, de référencement web, d’acquisition de trafic, de publicité sur internet, de stratégie digitale et d’accompagnement.</strong>
+        <br>
+        En effet, plus de 80 % de la population mondiale est connectée à Internet. Par conséquent, internet représente un marché potentiel pour une entreprise souhaitant accroître ses parts de marché.  C’est à cet effet que nous aidons et accompagnons les PME dans leur transformation digitale. Cela leur permet d’être plus compétitif et d’accroître leurs parts de marché. En plus, nos services visent à accroître votre visibilité, améliorer votre notoriété et accroître votre chiffre d’affaires.
+       </p>
+    </div>
+</div>
 <div class="container">
     <div class="inner_sec_grids_info_w3ls">
-        <div class="col-md-4 blog-grid one">
+        <hr>
+        <h2 class="h_o">NOS SERVICES <i class="fa fa-caret-square-o-down" aria-hidden="true"></i></h2>
+        <p class="text-center">ENSEMBLE POUR LA TRANSFORMATION DIGITALE</p>
+        <br><div class="col-md-4 blog-grid one">
             <a class="" href="#modalDev" data-toggle="modal"><i class="fa fa-html5" aria-hidden="true"></i></a>
             <div class="events_info">
                 {{-- <h5>Oct 12,2017</h5> --}}
@@ -165,34 +182,38 @@
 </div>
 <hr>
 
-
 <div class="container-fluid">
-    <div class="row">
-    <h2 class="h_o">Offres Emploi - Stage - Freelance sont disponibles</h2>
-        <div class="col-md-12 text-center ban_o">
-         <br>
+    <div class="row ban_o">
+        <div class="col-md-8 text-center ">
+            <h2 class="h_o">Devenir freelance chez Groupe digital</h2>
+            <p style="color:white; background-color:#2158f3;border-radius:30px;">Publier vos services ,experiences et réalisations et obtenez des contrats en tant que freelance</p>
+            {{-- @include('pages.partials.carousel_freelance') --}}
+
+        </div>
+            <div class="col-md-4 ">
+               <a class="btn btn-info btn-lg" href="{{ route('freelance.create') }}">Publier un service »</a>  
+               <a class="btn btn-info btn-lg" href="{{ route('freelance.index') }}">Rechercher un service »</a>  
+            </div>
+    </div>
+</div>
+
+<br>
+<div class="container-fluid">
+    <div class="row ban_o">
+        <div class="col-md-8 text-center ">
+            <h2 class="h_o">Decouvrez les offres d'emplois et stages disponibles</h2>
+            <p style="color:white; background-color:#2158f3; border-radius:30px;">Consulter les offres ou poster une offres  </p>
             @include('pages.partials.carousel_offre')
-        <hr>
-        <a class="btn btn-primary btn-lg" href="{{ route('offre.index') }}">Voir les offres »</a>  
-        <a class="btn btn-success btn-lg" href="{{ route('offre.useroffre_create') }}">Publier une offre »</a>  
 
+        </div>
+            <div class="col-md-4 ">
+                <a class="btn btn-info btn-lg" href="{{ route('offre.index') }}">Voir les offres »</a>  
+                <a class="btn btn-info btn-lg" href="{{ route('offre.useroffre_create') }}">Publier une offre »</a>  
             </div>
     </div>
 </div>
+
 <hr>
-<div class="container-fluid">
-    <div class="row">
-        <h2 class="h_o"> Integrer le groupe des Freelances </h2>
-        <div class="col-md-12 text-center ban_o">
-             <br>
-            @include('pages.partials.carousel_freelance')
-            <hr>
-            <a class="btn btn-primary btn-lg" href="{{ route('freelance.index') }}">Rechercher un service »</a>  
-            <a class="btn btn-success btn-lg" href="{{ route('freelance.create') }}">Publier un service »</a>  
-            </div>
-    </div>
-  
-</div>
 
 <hr>
 

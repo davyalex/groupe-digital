@@ -71,13 +71,13 @@
                                 <div class="form-inputs name">
                                     <p>Vos services</p>
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                                    <textarea name="detail" placeholder=""id="edit"></textarea>
+                                    <textarea cols="30" rows="15" name="detail" placeholder=""id="edit"></textarea>
                                 </div>
                             </div>
                             <script>
                                 (function () {
           new FroalaEditor("#edit")
-        })()
+        })
                               </script>
                             <div class="clearfix"></div>
                             {{-- <div class="form-inputs">

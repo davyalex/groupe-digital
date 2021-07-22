@@ -50,11 +50,11 @@
 
 
 <style>
-    #search_form{  background-color: #000066 }
+    #search_form{  background-color: #2196f3 }
 </style>
 
 <div id="search_form" class="search_top">
-    <h2>Decouvrez nos services</h2>
+    <h2>BIENVENUE CHEZ GROUPE DIGITAL</h2>
     {{-- <form action="#" method="post">
         <input type="text" name="Enter Keyword(s)" placeholder="Enter Keyword(s)" required="">
         <input class="email" name="Location" type="text" placeholder="Location" required="">

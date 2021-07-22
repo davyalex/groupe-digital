@@ -17,8 +17,8 @@
                         }
                     </style>
                     <a class="navbar-brand" href="/">
-                        <img class="img-fluid img-responsive figure-img logo" src="{{ asset('images/LOGO.png') }}" alt="">
-                        {{-- <h1><span class="fa fa-signal" aria-hidden="true"></span> DIGITAL <label>Groupe</label></h1> --}}
+                        {{-- <img class="img-fluid img-responsive figure-img logo" src="{{ asset('images/LOGO.png') }}" alt=""> --}}
+                        <h1><i class="fa fa-caret-square-o-up" aria-hidden="true"></i> Groupe <label style="color:#ff9800;text-align:right;">digital</label></h1>
                     </a>
                 </div>
                 <!--/.navbar-header-->
@@ -27,25 +27,22 @@
                     <nav class="link-effect-2" id="link-effect-2">
                         <ul class="nav navbar-nav">
                             <li><a href="/" class="effect-3"><i class="fa fa-home " aria-hidden="true"></i> Acceuil</a></li>
-                            <li><a href="/" class="effect-3">Services</a></li>
+                            {{-- <li><a href="/" class="effect-3">Services</a></li> --}}
 
-                            {{-- <li class="dropdown">
-                                <a href="{{ route('Acceuil') }}" class="dropdown-toggle effect-3" data-toggle="dropdown">Services <b class="caret"></b></a>
+                            <li class="dropdown">
+                                <a href="{{ route('Acceuil') }}" class="dropdown-toggle effect-3" data-toggle="dropdown">L'entreprise <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#modalDev" data-toggle="modal" data-target="#modalDev">Developpement Application</a></li>
+                                    <li><a href="#modalDev" data-toggle="modal" data-target="#modalDev"><strong>Nos services</strong></a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#modalMark" data-toggle="modal">Marketing Digital</a></li>
+                                    <li><a href="#modalMark" data-toggle="modal"><strong>Nos Packages</strong></a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#modalMul" data-toggle="modal">Multimedia</a></li>
+                                    <li><a href="#modalMul" data-toggle="modal"><strong>Nos Réalisations</strong></a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#modalMain" data-toggle="modal">Maintenance informatique</a></li>
+                                    <li><a href="#modalMain" data-toggle="modal"><strong>Nos Partenaires</strong></a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#modalRes" data-toggle="modal">Reseaux informatiques</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#modalForm" data-toggle="modal">Formations</a></li>
-                                    <li class="divider"></li>
+                                   
                                 </ul>
-                            </li> --}}
+                            </li>
 
                             {{-- <li><a href="/offre.index" class="effect-3">Offres</a></li> --}}
 
@@ -68,7 +65,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="" class="dropdown-toggle effect-3" data-toggle="dropdown">Offres <b class="caret"></b></a>
+                                <a href="" class="dropdown-toggle effect-3" data-toggle="dropdown">Emplois & Stages <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     {{-- @forelse ($category as $categories)
                                    
@@ -83,7 +80,7 @@
 
                                 </ul>
                             </li>
-                             <li><a href="#" class="effect-3">Nos réalisations</a></li>
+                         
 
                             @guest
                             <li class="dropdown">

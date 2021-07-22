@@ -56,15 +56,16 @@
 													<p>{{ $freelances->detail }}</p>
 												</div>
 												<div class="modal-footer ">
-													<a href="" class=""><i class="fa fa-whatsapp" aria-hidden="true"></i> {{ $freelances->contact }}</a>
-													<a href="" class=""><i class="fa fa-envelope" aria-hidden="true"></i> {{ $freelances->email }}</a>
+													<a href="mailto:"></a>
+													<a href="tel:{{ $freelances->contact }}" class=""><i class="fa fa-whatsapp" aria-hidden="true"></i> {{ $freelances->contact }}</a>
+													<a href="mailto:{{ $freelances->email }}" class=""><i class="fa fa-envelope" aria-hidden="true"></i> {{ $freelances->email }}</a>
 												</div>
 											</div>
 										</div>
 									</div>
 								<ul class="top-btns">
-									<li><a href="#" class=" fa fa-envelope "> <span class="" style="color:black; font-weight:bold;">{{ $freelances->email }}</span></a></li>
-									<li><a href="#" class="fa fa-whatsapp"> <span class=""style="color:black;font-weight:bold;">{{ $freelances->contact }}</span></a></li>
+									<li><a href="tel:{{ $freelances->contact }}" class=" fa fa-whatsapp "> <span class="" style="color:black; font-weight:bold;">{{ $freelances->contact }}</span></a></li>
+									<li><a href="mailto:{{ $freelances->email }}" class="fa fa-envelope"> <span class=""style="color:black;font-weight:bold;">{{ $freelances->email }}</span></a></li>
 								
 								</ul>
 
