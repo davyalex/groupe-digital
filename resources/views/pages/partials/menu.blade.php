@@ -14,11 +14,12 @@
                     <style>
                         .logo{
                             width: 180px;
+                            margin-top: -35px;
                         }
                     </style>
                     <a class="navbar-brand" href="/">
-                        {{-- <img class="img-fluid img-responsive figure-img logo" src="{{ asset('images/LOGO.png') }}" alt=""> --}}
-                        <h1><i class="fa fa-caret-square-o-up" aria-hidden="true"></i> Groupe <label style="color:#ff9800;text-align:right;">digital</label></h1>
+                        <img class="img-fluid img-responsive figure-img logo" src="{{ asset('images/logo.png') }}" alt="">
+                        {{-- <h1><i class="fa fa-caret-square-o-up" aria-hidden="true"></i> Groupe <label style="color:#ff9800;text-align:right;">digital</label></h1> --}}
                     </a>
                 </div>
                 <!--/.navbar-header-->

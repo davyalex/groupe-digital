@@ -173,7 +173,7 @@ label {
 .navbar-brand {
 	float: left;
 	padding: 0!important;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 0px!important;
 	height: 0px!important;
 	text-transform: uppercase;
@@ -183,7 +183,7 @@ label {
 .navbar-default a.navbar-brand h1 {
 	color: #2196f3;
 	font-weight: bold;
-	margin-bottom: 5px;
+	font-family: omegle;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -215,9 +215,11 @@ label {
 .navbar-default .navbar-brand label {
 	color: #2196f3;
 	display: block;
-	font-size: 0.3em;
+	font-size: 0.4em;
 	text-align: right;
 	letter-spacing: 3px;
+	text-transform: lowercase;
+	margin-top: -10px;
 }
 
 .navbar-default .navbar-toggle:hover,

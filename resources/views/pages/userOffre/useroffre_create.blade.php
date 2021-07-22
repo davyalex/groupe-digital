@@ -44,7 +44,7 @@
                     </script>
                      <div class="form-group">
                          <label for="my-input">Category</label>
-                         <select   name="category_id" id="selectCategory" class="form-control">
+                         <select name="category_id" id="selectCategory" class="form-control">
                              @foreach ($category as $categories)
                              <option value="{{ $categories->id}}">{{ $categories->libelle }}</option>
                              @endforeach

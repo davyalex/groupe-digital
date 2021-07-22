@@ -165,8 +165,8 @@
 				<div class="col-md-9 footer_bottom_grid">
 					<div class="footer_bottom1">
 						<a href="/">
-							{{-- <img class="img-fluid img-responsive logo" src="{{ asset('images/LOGO.png') }}" alt=""> --}}
-							<h1><i class="fa fa-caret-square-o-up" aria-hidden="true"></i> Groupe <label style="color:#ff9800;text-align:right;">digital</label></h1>
+							<img class="img-fluid img-responsive figure-img logo" src="{{ asset('images/logo.png') }}" alt="">
+							{{-- <h1 style="font-family:omegle;"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i> Groupe <label style="color:#ff9800;text-align:right;">digital</label></h1> --}}
 						</a>
 						<p>© 2021 Groupe digital. Tous droit reservé </p>
 					</div>
